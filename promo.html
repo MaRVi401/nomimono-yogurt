@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nomimono Yogurt - Promo</title>
+  <link rel="icon" href="assets/icons/cofee.png" type="image/x-icon">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- External CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navbar Section -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <!-- Logo -->
+      <a href="index.html" class="brand-logo">
+        <span class="icon">☕</span>
+        <span class="text-dark">Nomimono</span>
+        <span class="text-orange">Yogurt</span>
+      </a>
+
+      <!-- Hamburger Button (Mobile) -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="shop.html" class="nav-link">Shop</a></li>
+          <li><a href="promo.html" class="nav-link active">Promo</a></li>
+          <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <!-- Cart Button -->
+      <a href="#" class="btn-cart">
+        <img src="assets/icons/cart.png" alt="Cart Icon" class="cart-icon-img">
+        <span id="cartText">Keranjang (1)</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Promo Section -->
+  <main class="promo-section">
+    <div class="container promo-container">
+      <!-- Left Content -->
+      <div class="promo-content">
+        <div class="badge badge-promo">
+          <span>🔥</span> LIMITED PROMO: MATSURI DEAL
+        </div>
+
+        <h1 class="promo-title">
+          Natsu Beverage Special Bundles!
+        </h1>
+
+        <p class="promo-description">
+          Rayakan kesegaran musim dengan diskon menarik hemat hingga 25%. Dapatkan nutrisi seimbang untuk tubuh sehat dan kulit bercahaya setiap hari.
+        </p>
+
+        <!-- Bundle Cards Container -->
+        <div class="bundle-grid">
+
+          <!-- Bundle Card 1 -->
+          <div class="bundle-card active">
+            <span class="bundle-tag">Paling Laris</span>
+            <h3 class="bundle-name">Matsu Pack (Isi 3)</h3>
+            <div class="bundle-price-group">
+              <span class="price-old">Rp 66.000</span>
+              <span class="price-new">Rp 49.000</span>
+            </div>
+            <ul class="bundle-features">
+              <li><span class="check-icon">✔</span> 1x Ichigo Fresh Strawberry</li>
+              <li><span class="check-icon">✔</span> 1x Murasaki Blueberry</li>
+              <li><span class="check-icon">✔</span> 1x Nami Original</li>
+            </ul>
+          </div>
+
+          <!-- Bundle Card 2 -->
+          <div class="bundle-card">
+            <h3 class="bundle-name">Hanami Trio (Matcha Pack)</h3>
+            <div class="bundle-price-group">
+              <span class="price-old">Rp 72.000</span>
+              <span class="price-new">Rp 55.000</span>
+            </div>
+            <ul class="bundle-features">
+              <li><span class="check-icon">✔</span> 2x Uji Matcha Yogurt</li>
+              <li><span class="check-icon">✔</span> 1x Nami Original Creamy</li>
+              <li><span class="check-icon">✔</span> Free Exclusive Sticker</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="promo-image-wrapper">
+        <div class="promo-card-image">
+          <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=1000&q=80" alt="Yogurt Promo Deal" class="promo-img">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- External JavaScript -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

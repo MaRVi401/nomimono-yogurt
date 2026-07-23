@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomimono Yogurt - Kontak</title>
+    <link rel="icon" href="assets/icons/cofee.png" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <!-- Logo -->
+            <a href="index.html" class="brand-logo">
+                <span class="icon">☕</span>
+                <span class="text-dark">Nomimono</span>
+                <span class="text-orange">Yogurt</span>
+            </a>
+
+            <!-- Hamburger Button (Mobile) -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <nav class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="shop.html" class="nav-link">Shop</a></li>
+                    <li><a href="promo.html" class="nav-link">Promo</a></li>
+                    <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                    <li><a href="contact.html" class="nav-link active">Kontak</a></li>
+                </ul>
+            </nav>
+
+            <!-- Cart Button -->
+            <a href="#" class="btn-cart">
+                <img src="assets/icons/cart.png" alt="Cart Icon" class="cart-icon-img">
+                <span id="cartText">Keranjang (0)</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <main class="contact-section">
+        <div class="container contact-container">
+
+            <!-- Left Content / Information -->
+            <div class="contact-info">
+                <h1 class="contact-title">Hubungi Kami</h1>
+                <p class="contact-description">
+                    Apakah Anda memiliki pertanyaan atau ingin menjadi mitra/reseller resmi dari Nomimono Yogurt? Tim
+                    Customer Support kami siap membantu Anda dengan ramah.
+                </p>
+
+                <!-- Contact Items -->
+                <div class="contact-list">
+
+                    <!-- Item 1: Location -->
+                    <div class="contact-item">
+                        <div class="contact-icon-wrapper">
+                            <span class="contact-icon">📍</span>
+                        </div>
+                        <div class="contact-text">
+                            <span class="contact-label">Main Store</span>
+                            <p class="contact-value">Jl. Dago No. 120, Kota Bandung, Jawa Barat</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Email -->
+                    <div class="contact-item">
+                        <div class="contact-icon-wrapper">
+                            <span class="contact-icon">✉️</span>
+                        </div>
+                        <div class="contact-text">
+                            <span class="contact-label">Email Resmi</span>
+                            <p class="contact-value">hello@nomimonoyogurt.com</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Whatsapp -->
+                    <div class="contact-item">
+                        <div class="contact-icon-wrapper">
+                            <span class="contact-icon">📞</span>
+                        </div>
+                        <div class="contact-text">
+                            <span class="contact-label">Whatsapp</span>
+                            <p class="contact-value">+62 812-3456-7890</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Right Form Card -->
+            <div class="contact-form-wrapper">
+                <form class="contact-form" id="contactForm">
+
+                    <div class="form-group">
+                        <label for="fullName" class="form-label">Nama Lengkap Anda</label>
+                        <input type="text" id="fullName" class="form-input" placeholder="cth. Budiono" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Alamat E-mail</label>
+                        <input type="email" id="email" class="form-input" placeholder="nama@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Pesan atau Pertanyaan</label>
+                        <textarea id="message" class="form-textarea" rows="4" placeholder="Tulis pesan Anda di sini..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Kirim Pesan Sekarang</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+    <!-- Modal Popup Notification -->
+    <div class="modal-overlay" id="contactModal">
+        <div class="modal-card">
+            <div class="modal-icon-wrapper">
+                <img src="assets/icons/cofee.png" alt="Coffee Icon" class="modal-icon-img">
+            </div>
+            <h2 class="modal-title">Pesan Terkirim!</h2>
+            <p class="modal-message" id="modalMessage">
+                Terima kasih! Pesan Anda telah berhasil kami terima.
+            </p>
+            <button class="btn-modal-close" id="closeModalBtn">Tutup</button>
+        </div>
+    </div>
+    <!-- External JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
